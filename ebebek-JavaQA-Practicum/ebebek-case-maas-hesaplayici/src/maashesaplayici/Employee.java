@@ -78,26 +78,28 @@ public class Employee {
         }
 	}
     
-	public void toString(Employee _employee) {
+    
+	public void toString(boolean _bool) {
 		
     	//Çalýþana ait bilgileri ekrana bastýrýr.
-
-		System.out.println("Adý: " + this.name);
-		System.out.println("Maaþý: " + this.salary); 
-		System.out.println("Çalýþma Saati: " + this.workHours);	
-		System.out.println("Baþlangýç Yýlý: " + this.hireYear);
-		
-		tax(this.salary);
-		System.out.println("Vergi: " + String.format("%.2f", tax) );
-		
-		bonus(this.workHours);
-		System.out.println("Bonus: " + String.format("%.2f", bonus) );
-		
-		raiseSalary(this.hireYear,this.salary );
-		System.out.println("Maaþ Artýþý: " + String.format("%.2f", raiseSalary) );
-		System.out.println("Vergi ve Bonuslar ile birlikte maaþ : " + String.format("%.2f", (this.salary + bonus - tax)) );
-		System.out.println("Toplam maaþ : " + String.format("%.2f", (this.salary + bonus + raiseSalary - tax)) );
-		System.out.println(" ");
-
+		if(_bool) {
+			System.out.println(" ");
+			System.out.println("Adý: " + this.name);
+			System.out.println("Maaþý: " + this.salary); 
+			System.out.println("Çalýþma Saati: " + this.workHours);	
+			System.out.println("Baþlangýç Yýlý: " + this.hireYear);
+			
+			tax(this.salary);
+			System.out.println("Vergi: " + String.format("%.2f", tax) );
+			
+			bonus(this.workHours);
+			System.out.println("Bonus: " + String.format("%.2f", bonus) );
+			
+			raiseSalary(this.hireYear,this.salary );
+			System.out.println("Maaþ Artýþý: " + String.format("%.2f", raiseSalary) );
+			System.out.println("Vergi ve Bonuslar ile birlikte maaþ : " + String.format("%.2f", (this.salary + bonus - tax)) );
+			System.out.println("Toplam maaþ : " + String.format("%.2f", (this.salary + bonus + raiseSalary - tax)) );
+			System.out.println(" ");
+		}
 	}
 }
