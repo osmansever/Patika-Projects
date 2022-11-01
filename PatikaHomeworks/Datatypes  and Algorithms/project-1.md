@@ -7,6 +7,8 @@
 4. Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
 5. [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
 
+***
+
 1. Dizinin en küçük elemanı bulunarak başa yazılır, kalan dizide de en küçük eleman bulunup başa yazılır. Bu işlem dizi bitene kadar tekrarlanır.
 2. o(n^2)  n + (n-1) + (n-2) + ... + 1 = n.(n+1)/2 , ilk işlemde worst case durumunda n tane elemana bakılır (en küçük elemanın sonda olması), sonraki işlemde n-1 elemanlı dizide arama yapılır.
 3. Average case = n/2 işlem , worst case = n işlem, best case = 1 işlem
