@@ -15,6 +15,7 @@
 4. sıralı dizi şöyledir [2,6,16,18,22,27] 18 dizinin ortalarında olduğu için average case e girer.
 
 5. 
+
 i.  [2,3,5,8,7,9,4,15,6]
 ii. [2,3,5,8,7,9,4,15,6]
 iii.[2,3,4,8,7,9,5,15,6]
